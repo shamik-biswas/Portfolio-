@@ -43,7 +43,7 @@
 
 .hero-context >h1{
   font-size: 56px; 
-  font-weight: bold;
+font-weight: 800;
 }
 #crafting{
   color: #872BFF ;
@@ -82,7 +82,7 @@ margin: 33px 0px;
 .skills-title >h4{
   font-size: 24px;
   font-weight: bold;
-  color:   #872BFF;;
+  color:   #872BFF;
 }
 .skills-title >h1{
   font-size: 44px;
@@ -116,6 +116,38 @@ margin: 33px 0px;
   font-weight: bold;
   color: black;
   
+}
+
+/* Start projects-section */
+.projects-section{
+  margin: 0px 30px;
+}
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 60px 0px;
+}
+.project-1 ,.project-2 ,.project-3{
+  border: 2px solid  #872BFF;
+  border-radius: 16px;
+  display: flex;
+  gap: 32px;
+  padding: 40px;
+  
+}
+.project-2{
+  flex-direction: row-reverse;
+}
+.projects-text >p{
+  margin: 14px 0px;
+}
+.projects-text >h5{
+  color: #0E0E0E;
+  font-weight: 200;
+}
+.projects-image >img{
+  width: 290px;
 }
 
 /* responsive */ 
@@ -155,11 +187,20 @@ margin: 33px 0px;
     flex-direction: column;
   }
   /* skill-section */
+  
+  .skills-title >h1{
+  font-size: 36px;
+  
+} 
   .card-container{
   
   grid-template-columns: repeat(1,1fr);
   gap: 20px;
   
+}
+/* projects-section */
+.project-1 ,.project-2 ,.project-3{
+  flex-direction: column; 
 }
 
 }
