@@ -1,0 +1,160 @@
+*{
+  padding: 0px; 
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+/* commonly uses style */
+
+.fontPlus {
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+  .flex, .hero-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .description-text{
+  color: #8A8A8A;
+  font-size: 18px;
+}
+
+.btn-primary{
+  border-radius: 30px;
+  border:none;
+  background-color: #872BFF;
+  padding:  16.5px 32px;
+  font-size: 14px;
+   font-weight: bold;
+}
+.btn-primary:hover{
+  background-color:  #872BFF;
+  opacity: 0.5;
+}
+
+/*start-hero-section */
+.hero-section{
+  background-image:url('../assets/Hero-bg.png') ;
+  padding: 30px;
+  width:100%;
+}
+
+.hero-context >h1{
+  font-size: 56px; 
+  font-weight: bold;
+}
+#crafting{
+  color: #872BFF ;
+}
+#hero-des-padding{
+margin: 33px 0px;
+}
+.hero-btn-container{
+  display: flex;
+  gap: 10px;
+}
+.btn-CV{
+  border: 2px solid #872BFF;
+  border-radius: 30px;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-CV:hover{
+ background-color:  #872BFF; 
+ opacity: 0.6;
+}
+    .hero-image >img{
+  width: 600px;
+   object-fit: cover;
+  }
+
+
+/* responsive */ 
+
+
+
+/* responsive for mobile devices */
+@media only screen and (max-width:600px){
+
+  /* hero-section */
+  .hero-section{
+    padding: 0px, 5px;
+  }
+  .hero-part{
+    flex-direction: column-reverse;
+    gap: 18px;
+  }
+  .hero-context{
+    text-align: center;
+  }
+  .hero-context >h1{
+  font-size: 35px; 
+  
+}
+  .description-text{
+  font-size: 13px;
+}
+  .hero-image{
+    text-align: center;
+    background: none;
+  }
+  .hero-image >img{
+  width:300px;
+   
+  }
+  .hero-btn-container{
+    flex-direction: column;
+  }
+}
+/* responsive for small devices  */
+@media (min-width: 601px) and (max-width: 768px) {
+  
+        /* hero-section */
+  .hero-section{
+    padding: 0px, 8px;
+  }
+     .hero-context >h1{
+  font-size: 35px; 
+  
+}
+
+  .hero-image >img{
+  width:360px;
+   
+  }
+
+  
+}
+
+
+/* responsive for medium devices */
+@media (min-width: 769px) and (max-width: 992px) {
+      /* hero-section */
+  .hero-section{
+    padding: 0px, 12px;
+  }
+   .hero-context >h1{
+  font-size: 38px; 
+  
+}
+  .description-text{
+  font-size: 15px;
+}
+
+  .btn-primary{
+  padding:  10px 25px;
+  border-radius: 20px;
+}
+.btn-CV{
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+  .hero-image >img{
+  width:500px;
+   
+  }
+
+}
