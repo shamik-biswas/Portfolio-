@@ -40,7 +40,7 @@
 
 /*start-hero-section */
 .hero-section{
-  background-image:url('../assets/Hero-bg.png') ;
+  background-image:url('Hero-bg.png') ;
   padding: 30px;
   width:100%;
 }
